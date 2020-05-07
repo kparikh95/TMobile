@@ -28,7 +28,7 @@ public class UrlShortner {
     public String encode(String longURL){
         String key= getRandomKey();
         while(hm.containsKey(key)){
-            key=getRandomKey();
+            //key=getRandomKey();
         }
         //Add code for custom URL
         hm.put(key,longURL);
